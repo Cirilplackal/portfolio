@@ -1,0 +1,33 @@
+.testimonials_wrapper {
+}
+.swiper_component {
+  width: 100% !important;
+  margin: 50px;
+}
+
+.testimonial {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  color: var(--text-color);
+  border: 0.5px solid var(--card-border);
+}
+
+.testimonial img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.testimonial h4 {
+  color: var(--primary-color);
+}
+
+.testimonial h4 span {
+  color: var(--text-color);
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+}
