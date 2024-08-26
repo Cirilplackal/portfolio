@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import aboutImage from "@assets/about-bg.jpg";
+import{skills} from "../../constants"
 const About = () => {
   const experienceCounters = [
     {
@@ -89,57 +90,94 @@ const About = () => {
     <div className={`${styles.about_wrapper} section`} id="about">
       <div className={`section_title`}>
         <h2>About me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
-        </p>
+        <div className={styles.about_section}>
+          <div>
+            <h2>I am a Full-Stack Developer</h2>
+            <p>
+              I specialize in creating robust, scalable, and user-friendly
+              applications using a diverse set of technologies. My expertise
+              spans across <span>NestJS, ReactJS, PostgreSQL, Django</span>, and
+              more, enabling me to deliver comprehensive solutions that meet
+              modern web development needs.
+            </p>
+          </div>
+          <div>
+            <h2>Development Practices</h2>
+            <p>
+              Throughout my career, I have embraced agile development practices,
+              focusing on performance optimization, API development, and
+              efficient bug tracking. My projects often involve integrating
+              modern UI/UX frameworks to ensure a seamless and intuitive user
+              experience.
+            </p>
+          </div>
+
+          <div>
+            <h2>Leadership & Volunteering</h2>
+            <p>
+              Beyond technical skills, I have a strong background in leadership
+              and community engagement. During my college years, I actively
+              participated in various campus communities, taking on significant
+              roles that honed my leadership and teamwork abilities.
+              Volunteering has always been a passion of mine, allowing me to
+              give back to the community while developing soft skills that
+              complement my technical expertise.
+            </p>
+          </div>
+
+          <div>
+            <h2>Career Goals</h2>
+            <p>
+              My goal is to continuously evolve as a developer, leveraging my
+              skills to contribute to innovative projects and drive positive
+              change in the tech industries.
+            </p>
+          </div>
+        </div>
         <div className={styles.about}>
           <div className={styles.about_image}>
-            <img src={aboutImage} alt="img-about" />
+            <img
+              src={
+                "https://media.istockphoto.com/id/1049422504/photo/with-crossed-arms-confident-and-serious.jpg?s=1024x1024&w=is&k=20&c=HN-vqfhTfHfjLmxLfH515ncqK_DIlscfT2uPsojXFVs="
+              }
+              alt="img-about"
+            />
           </div>
           <div className={styles.about_content}>
-            <h3>Hello, I am Ciril Thomas, Based in India</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat
-            </p>
-            <div className={styles.details}>
-              <div className={styles.detail}>
-                <p>
-                  <strong>Phone No : </strong>+91 94884 28991
-                </p>
-                <p>
-                  <strong>Email : </strong>mail.cirilplackal@gmail.com
-                </p>
-                <p>
-                  <strong>Address : </strong>7D, Santhi Cyberdale, Near
-                  Infopark, Kakkanad,Kochi
-                </p>
-              </div>
-              <div className={styles.detail}>
-                <p>
-                  <strong>Nationality : </strong>Indian
-                </p>
-                <p>
-                  <strong>Username : </strong>cirilplackal
-                </p>
-                <p>
-                  <strong>Status : </strong>Available
-                </p>
-              </div>
+            <div>
+              <h2>Technical Proficiencies</h2>
+              <ul>
+                <li>
+                  <strong>Frontend:</strong> ReactJS, Ant Design, Tailwind CSS,
+                  DaisyUI, JavaScript, TypeScript
+                </li>
+                <li>
+                  <strong>Backend:</strong> NestJS, Django, REST APIs
+                </li>
+                <li>
+                  <strong>Database:</strong> SQL, PostgreSQL
+                </li>
+                <li>
+                  <strong>Tools & Technologies:</strong> Vite, Docker, Git,
+                  VSCode
+                </li>
+              </ul>
             </div>
-            <button className={styles.about_button}>See more..</button>
+            <h3>Technical Proficiencies</h3>
+            <div style={{ display: "flex", gap: "15px" }}>
+              {skills.map((skill) => (
+                <div key={skill.name}>
+                  <img src={skill.imageUrl} style={{ width: "50px" }} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.experience_counters}>
           {experienceCounters.map((experience) => (
             <div className={styles.experience_counter} key={experience.label}>
               <h2>
-                <span>+{experience.count} </span>
+                <span>{experience.count}+</span>
                 {experience.label}
               </h2>
             </div>

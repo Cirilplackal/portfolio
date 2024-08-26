@@ -47,6 +47,22 @@
   padding: 0;
 }
 
+.about_section {
+display: flex;
+gap: 10px;
+ flex-direction: column;
+ color: var(--text-color);
+}
+.about_section span{
+  color: var(--primary-color);
+}
+.about_section ul{
+  padding-left: 20px;
+  color: var(--primary-color);
+}
+.about_section ul strong{
+  color: gray;
+}
 .details {
   display: flex;
   width: 100%;

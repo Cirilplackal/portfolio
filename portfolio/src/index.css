@@ -7,15 +7,19 @@
   list-style: none;
   text-decoration: none;
   font-family: "poppins";
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--primary-color) black; /* For Firefox */
 }
+
 body {
   background-color: var(--bg-color);
 }
+
 :root {
   --bg-color: #ffffff;
-  --text-color: black;
-  --primary-color: #fab300;
+  --text-color:#64748b;
+  --primary-color: #18cf08;
   --logo-color: #ffffff;
   --card-bg: #f8f9fa;
   --box-shadow: rgba(0, 0, 0, 0.1);
@@ -27,19 +31,24 @@ body {
 [Theme="Dark"] {
   --bg-color: #000000;
   --text-color: rgb(255, 255, 255);
-  --primary-color: #fab300;
+  --primary-color: #18cf08;
   --logo-color: #000000;
   --card-bg: #1e1e1e;
-  --box-shadow: #fab300;
+  --box-shadow: #18cf08;
   --card-border: rgba(255, 255, 255, 0.1);
   --section-title: white;
   --section-border: white;
 }
 
+::selection {
+  background-color: var(--primary-color);
+  color: black;
+}
+
 .head_wrapper {
   min-height: 100vh;
   width: 100%;
-  background: url(assets/header-new.jpg);
+  background: url(https://dz2cdn1.dzone.com/storage/temp/15324590-software-developer-g37ddca46a-1280.jpg);
   background-position: center top;
   background-size: cover;
   display: flex;
@@ -48,7 +57,8 @@ body {
 button {
   height: 45px;
   width: 165px;
-  background-color: #ffffff;
+  background-color: #1e1e1e;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   border: none;
   color: var(--primary-color);
   font-weight: 500;
@@ -62,8 +72,7 @@ button {
 }
 
 button:hover {
-  background-color: #1e1e1e;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+  background-color: #ffffff;
   cursor: pointer;
 }
 
@@ -98,15 +107,43 @@ button:hover {
   top: 1px;
   left: -28px;
 }
-
 .section_title h2,
 .section_title p {
   padding-left: 18px;
 }
 
+.logo_containers{
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap:3rem ;
+}
+.logo_block_container {
+  position: relative;
+  transition: 250ms;
+  perspective: 500px;
+}
+
+.logo_block_container .btn-back {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  transition: 250ms;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotateZ(15deg);
+  will-change: transform;
+  box-shadow: 16px 0 40px #e4e4e4;
+}
+
 @media screen and (max-width: 600px) {
+  body{
+      text-align: justify;
+  }
   .section {
-    padding: 10px 20px 50px;
+    padding: 10px 20px 10px;
   }
   .section_title h2,
   .section_title p {
