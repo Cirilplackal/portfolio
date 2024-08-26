@@ -31,9 +31,10 @@
 }
 
 .logo a {
-  padding: 18px 20px;
+  padding: 15px 20px;
+  border-radius: 50%;
   background-color: var(--primary-color);
-  font-size: 600;
+  font-size: 200;
   color: var(--logo-color);
 }
 

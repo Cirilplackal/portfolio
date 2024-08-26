@@ -3,13 +3,15 @@ import { ReactTyped } from "react-typed";
 const Header = () => {
   return (
     <div className={styles.header_wrapper} id="home">
-      <small>Helloo there...!!!</small>
+      <small>Helloo there...!!!, Welcome to my page</small>
       <h2>
-        I M{" "}
+        Hey, I am Ciril Plackal
+      </h2>
+      <div className={styles.react_typed}>
+        I Am a{" "}
         <span>
           <ReactTyped
             strings={[
-              "Ciril Thomas",
               "Web Designer",
               "Web Developer",
               "Full Stack Developer",
@@ -21,12 +23,21 @@ const Header = () => {
             loop={true}
           ></ReactTyped>
         </span>
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, 
-      </p>
+      </div>
+      <ul>
+        <li>
+          Experienced Front end developer with 2 years of expertise in building
+          scalable web applications.
+        </li>
+        <li>
+          Proficient in React, GSAP, Framer, Tailwind CSS, and UI libraries such
+          as Ant Design,Chakra UI,Daisy UI, .etc{" "}
+        </li>
+        <li>
+          Experienced in back-end technologies such as NestJS and Django.
+          Skilled in PostgreSQL and PGAdmin
+        </li>
+      </ul>
       <div className={styles.social}>
         <i className="ri-facebook-line" />
         <i className="ri-instagram-line" />
