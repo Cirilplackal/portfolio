@@ -5,11 +5,6 @@ export const skills = [
     type: "Frontend",
   },
   {
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/express-109.svg",
-    name: "Express",
-    type: "Backend",
-  },
-  {
     imageUrl: "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
     name: "Git",
     type: "Version Control",

@@ -7,7 +7,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "poppins";
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: var(--primary-color) black; /* For Firefox */
 }
@@ -17,20 +17,22 @@ body {
 }
 
 :root {
-  --bg-color: #ffffff;
-  --text-color:#64748b;
+  --bg-color: #FAF9F6;
+  --text-color: #464646;
   --primary-color: #18cf08;
   --logo-color: #ffffff;
-  --card-bg: #f8f9fa;
+  --card-bg: white;
   --box-shadow: rgba(0, 0, 0, 0.1);
   --card-border: rgba(0, 0, 0, 0.1);
   --section-title: black;
   --section-border: #1e1e1e;
+  --lite-bg: #f4fff4;
+  --bg-image: url(https://ciracollege.com/wp-content/uploads/2020/11/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg);
 }
 
 [Theme="Dark"] {
   --bg-color: #000000;
-  --text-color: rgb(255, 255, 255);
+  --text-color: rgb(170, 170, 170);
   --primary-color: #18cf08;
   --logo-color: #000000;
   --card-bg: #1e1e1e;
@@ -38,6 +40,8 @@ body {
   --card-border: rgba(255, 255, 255, 0.1);
   --section-title: white;
   --section-border: white;
+  --lite-bg: #1e1e1e;
+  --bg-image: url(https://dz2cdn1.dzone.com/storage/temp/15324590-software-developer-g37ddca46a-1280.jpg);
 }
 
 ::selection {
@@ -48,16 +52,29 @@ body {
 .head_wrapper {
   min-height: 100vh;
   width: 100%;
-  background: url(https://dz2cdn1.dzone.com/storage/temp/15324590-software-developer-g37ddca46a-1280.jpg);
+  background: var(--bg-image);
+  transition: 1s;
   background-position: center top;
   background-size: cover;
   display: flex;
 }
-
+h2,
+h3 {
+  /* margin: 0 !important;
+  padding: 0 !important; */
+  font-weight: 400 !important;
+}
+h2 {
+  color: #18cf08;
+}
+p {
+  font-weight: 400 !important;
+  color: #818080;
+}
 button {
   height: 45px;
   width: 165px;
-  background-color: #1e1e1e;
+  background-color: var(--bg-color);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
   border: none;
   color: var(--primary-color);
@@ -112,11 +129,11 @@ button:hover {
   padding-left: 18px;
 }
 
-.logo_containers{
+.logo_containers {
   margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
-  gap:3rem ;
+  gap: 3rem;
 }
 .logo_block_container {
   position: relative;
@@ -138,9 +155,18 @@ button:hover {
   box-shadow: 16px 0 40px #e4e4e4;
 }
 
+.stack {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding-inline: 6px;
+  color: var(--primary-color);
+  background-color: var(--lite-bg);
+  font-size: small;
+}
+
 @media screen and (max-width: 600px) {
-  body{
-      text-align: justify;
+  body {
+    text-align: justify;
   }
   .section {
     padding: 10px 20px 10px;

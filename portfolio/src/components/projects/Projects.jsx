@@ -6,6 +6,7 @@ import project4 from "@assets/project4.webp";
 import project5 from "@assets/project5.webp";
 import project6 from "@assets/project6.webp";
 const Projects = () => {
+  const stacks = ["React Js", "JavaScript", "GSAP", "Tailwind CSS"];
   const myProjects = [
     {
       title: (
@@ -13,11 +14,9 @@ const Projects = () => {
           Landing Page <span>Landing Design, ReactJS JavaScript</span>
         </h4>
       ),
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat`,
-      imgURL: project1,
+      description: `This project is a React.js and TailwindCSS-based clone of Apple's iPhone 15 Pro website, showcasing the seamless integration of GSAP (Greensock Animations) and Three.js. The website effectively displays the iPhone 15 Pro models in various colors and shapes, delivering an engaging and interactive user experience.`,
+      imgURL:
+        "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
     },
     {
       title: (
@@ -29,7 +28,8 @@ const Projects = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat`,
-      imgURL: project2,
+      imgURL:
+        "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
     },
     {
       title: (
@@ -41,7 +41,8 @@ const Projects = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat`,
-      imgURL: project3,
+      imgURL:
+        "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
     },
     {
       title: (
@@ -85,10 +86,11 @@ const Projects = () => {
       <div className={`section_title`}>
         <h2>My Projects</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          Here you will find a collection of my most impactful work, showcasing
+          my expertise in modern web development and programming. From dynamic
+          single-page applications to full-stack solutions, these projects
+          reflect my passion for creating efficient, scalable, and user-friendly
+          experiences.
         </p>
       </div>
       <div className={styles.projects_cards}>
@@ -100,6 +102,23 @@ const Projects = () => {
             <div className={styles.project_content}>
               {project.title}
               <i className="ri-arrow-right-line" />
+            </div>
+            <div className={styles.project_description}>
+              {project.description}
+            </div>
+            <div
+              style={{
+                paddingLeft: "20px",
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "8px",
+              }}
+            >
+              {stacks.map((stack) => (
+                <span key={stack} className="stack">
+                  {stack}
+                </span>
+              ))}
             </div>
           </div>
         ))}

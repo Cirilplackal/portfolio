@@ -51,7 +51,13 @@
 display: flex;
 gap: 10px;
  flex-direction: column;
- color: var(--text-color);
+ color: var(--text-color);  
+ padding-top: 16px;
+ padding-left: 20px;
+}
+.about_section p{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .about_section span{
   color: var(--primary-color);
@@ -105,7 +111,9 @@ gap: 10px;
 .experience_counter h2 {
   text-align: center;
   font-weight: 600;
+  font-size: large;
   padding-left: 0 !important;
+  color: var(--text-color);
 }
 .experience_counter h2 span {
   color: var(--primary-color);
@@ -121,6 +129,11 @@ gap: 10px;
   gap: 40px;
   margin-top: 50px;
 }
+.qualifications h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .experience_wrapper,
 .educations_wrapper {
   width: 50%;

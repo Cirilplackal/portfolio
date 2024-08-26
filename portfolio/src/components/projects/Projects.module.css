@@ -58,7 +58,10 @@
   margin-top: 8px;
   border-radius: 50%;
 }
-
+.project_description{
+  padding: 16px;
+  font-size: small;
+}
 @media screen and (max-width: 1200px) {
   .projects_cards {
     grid-template-columns: repeat(2, 1fr);
