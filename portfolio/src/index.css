@@ -8,8 +8,8 @@
   text-decoration: none;
   font-family: "poppins";
   scroll-behavior: smooth;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: var(--primary-color) black; /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) black;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 :root {
-  --bg-color: #FAF9F6;
+  --bg-color: #faf9f6;
   --text-color: #464646;
   --primary-color: #18cf08;
   --logo-color: #ffffff;
@@ -163,7 +163,12 @@ button:hover {
   background-color: var(--lite-bg);
   font-size: small;
 }
-
+.status_completed {
+  color: var(--primary-color);
+}
+.status_inprogress {
+  color: #5d42f5;
+}
 @media screen and (max-width: 600px) {
   body {
     text-align: justify;
