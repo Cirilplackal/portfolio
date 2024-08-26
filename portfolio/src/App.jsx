@@ -8,7 +8,7 @@ import Testimonials from "@components/testimonials/Testimonials";
 import Contact from "@components/contact/Contact";
 import useLenis from "@hooks/useLenis";
 function App() {
-  useLenis();
+  // useLenis();
   return (
     <>
       <div className="head_wrapper">

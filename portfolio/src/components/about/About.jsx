@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import aboutImage from "@assets/about-bg.jpg";
+import useLenis from "@hooks/useLenis";
 import{skills} from "../../constants"
 const About = () => {
   const experienceCounters = [
@@ -86,23 +87,24 @@ const About = () => {
       ),
     },
   ];
+  // useLenis();
   return (
     <div className={`${styles.about_wrapper} section`} id="about">
       <div className={`section_title`}>
         <h2>About me</h2>
         <div className={styles.about_section}>
           <div>
-            <h2>I am a Full-Stack Developer</h2>
+            <h3>I am a Full-Stack Developer</h3>
             <p>
               I specialize in creating robust, scalable, and user-friendly
               applications using a diverse set of technologies. My expertise
               spans across <span>NestJS, ReactJS, PostgreSQL, Django</span>, and
-              more, enabling me to deliver comprehensive solutions that meet
+              <span>{" "}more</span>, enabling me to deliver comprehensive solutions that meet
               modern web development needs.
             </p>
           </div>
           <div>
-            <h2>Development Practices</h2>
+            <h3>Development Practices</h3>
             <p>
               Throughout my career, I have embraced agile development practices,
               focusing on performance optimization, API development, and
@@ -113,7 +115,7 @@ const About = () => {
           </div>
 
           <div>
-            <h2>Leadership & Volunteering</h2>
+            <h3>Leadership & Volunteering</h3>
             <p>
               Beyond technical skills, I have a strong background in leadership
               and community engagement. During my college years, I actively
@@ -126,7 +128,7 @@ const About = () => {
           </div>
 
           <div>
-            <h2>Career Goals</h2>
+            <h3>Career Goals</h3>
             <p>
               My goal is to continuously evolve as a developer, leveraging my
               skills to contribute to innovative projects and drive positive
@@ -164,7 +166,7 @@ const About = () => {
               </ul>
             </div>
             <h3>Technical Proficiencies</h3>
-            <div style={{ display: "flex", gap: "15px" }}>
+            <div style={{ display: "flex",flexWrap:"wrap", gap: "15px" }}>
               {skills.map((skill) => (
                 <div key={skill.name}>
                   <img src={skill.imageUrl} style={{ width: "50px" }} />
