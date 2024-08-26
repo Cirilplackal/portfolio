@@ -44,12 +44,16 @@
 .projects_cards .project_card:hover .project_content h4 {
   color: var(--primary-color);
 }
-.projects_cards .project_card .project_content span {
+.projects_cards .project_card .project_content div {
   display: block;
   font-size: 15px;
   font-weight: 300;
   margin-top: 8px;
+  color: var(--text-color);
 }
+/* .projects_cards .project_card .project_content div span {
+  color:green;
+} */
 
 .projects_cards .project_card .project_content i {
   padding: 15px;

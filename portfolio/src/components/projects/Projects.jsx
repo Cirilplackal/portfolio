@@ -1,17 +1,44 @@
 import styles from "./Projects.module.css";
-import project1 from "@assets/project1.webp";
-import project2 from "@assets/project2.webp";
+import project1 from "@assets/portfolio.gif";
+import project2 from "@assets/restaura.gif";
 import project3 from "@assets/project3.webp";
 import project4 from "@assets/project4.webp";
 import project5 from "@assets/project5.webp";
 import project6 from "@assets/project6.webp";
 const Projects = () => {
   const stacks = ["React Js", "JavaScript", "GSAP", "Tailwind CSS"];
-  const myProjects = [
+  const myProjects = [    {
+    title: (
+      <h4>
+        My Personal Portfolio{" "}
+        <div>
+          Status: <span className="status_inprogress">In Progress</span>
+        </div>
+      </h4>
+    ),
+    description: `Designed and developed a visually engaging portfolio page to showcase my projects, achievements, and skills. The site features both dark and night modes for enhanced user customization. Incorporated Framer Motion for smooth animations, Lenis for fluid scrolling.`,
+    imgURL:
+     project1,
+  },  {
+    title: (
+      <h4>
+        BlueKart - an ecommerce site{" "}
+        <div>
+          Status: <span className="status_inprogress">In Progress</span>
+        </div>
+      </h4>
+    ),
+    description: `Designed and developed a visually engaging portfolio page to showcase my projects, achievements, and skills. The site features both dark and night modes for enhanced user customization. Incorporated Framer Motion for smooth animations, Lenis for fluid scrolling.`,
+    imgURL:
+     project1,
+  },
     {
       title: (
         <h4>
-          Landing Page <span>Landing Design, ReactJS JavaScript</span>
+          Apple Landing Page Clone{" "}
+          <div>
+            Status: <span className="status_completed">Completed</span>
+          </div>
         </h4>
       ),
       description: `This project is a React.js and TailwindCSS-based clone of Apple's iPhone 15 Pro website, showcasing the seamless integration of GSAP (Greensock Animations) and Three.js. The website effectively displays the iPhone 15 Pro models in various colors and shapes, delivering an engaging and interactive user experience.`,
@@ -21,39 +48,26 @@ const Projects = () => {
     {
       title: (
         <h4>
-          Food Order App <span>UI/UX, ReactJS JavaScript</span>
+          Restaura, a restaurant website{" "}
+          <div>
+            Status: <span className="status_completed">Completed</span>
+          </div>
         </h4>
       ),
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat`,
-      imgURL:
-        "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
+      description: `Created a visually engaging restaurant website using React, JavaScript, Tailwind CSS, and Vite. Integrated Framer Motion for smooth animations, Lenis for fluid scrolling, and GSAP for dynamic effects. Showcased Glassmorphism for an elegant frosted glass design.`,
+      imgURL: project2,
     },
+
     {
       title: (
         <h4>
-          Records API <span>Nest JS,TypeScript,JavaScript</span>
+          Animations  <div>
+            Status: <span className="status_inprogress">In Progress</span>
+          </div>
         </h4>
       ),
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat`,
-      imgURL:
-        "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
-    },
-    {
-      title: (
-        <h4>
-          ECommerce App <span>UI/UX, ReactJS JavaScript</span>
-        </h4>
-      ),
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat`,
+      description: `Demonstrating advanced animation techniques and 3D visualization skills, with positive feedback on design and interactivity.
+`,
       imgURL: project4,
     },
     {
@@ -67,19 +81,7 @@ const Projects = () => {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat`,
       imgURL: project5,
-    },
-    {
-      title: (
-        <h4>
-          Youtube Clone <span>UI/UX, ReactJS JavaScript</span>
-        </h4>
-      ),
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat`,
-      imgURL: project6,
-    },
+    }
   ];
   return (
     <div className={`${styles.projects_wrapper} section`} id="projects">
