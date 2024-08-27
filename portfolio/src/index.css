@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) black;
+  letter-spacing: -0.5px; /* Adjust the value as needed */
 }
 
 body {
@@ -169,6 +170,16 @@ button:hover {
 .status_inprogress {
   color: #5d42f5;
 }
+
+.highlight{
+  /* color: rgb(0, 163, 22); */
+  font-weight: 500;
+
+   
+
+  
+}
+
 @media screen and (max-width: 600px) {
   body {
     text-align: justify;

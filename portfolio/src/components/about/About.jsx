@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 import aboutImage from "@assets/about-bg.jpg";
 import useLenis from "@hooks/useLenis";
-import{skills} from "../../constants"
+import { skills } from "../../constants";
 const About = () => {
   const experienceCounters = [
     {
@@ -13,52 +13,58 @@ const About = () => {
       count: 2,
     },
     {
-      label: "Happy Customers",
-      count: 10,
+      label: "Certifications",
+      count: 3,
     },
     {
       label: "Award Winnings",
-      count: 5,
+      count: 2,
     },
   ];
 
   const workExperience = [
     {
-      title: "Full Stack Engineer",
+      title: "Full Stack Engineer | Qburst Technologies, Kochi, India",
       duration: "2022 - Present",
       description: (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          Collaborated in the development of a resource management platform from
+          scratch, working closely with cross-functional teams in an Agile
+          environment. Integrated over 80 API endpoints to enhance system
+          reliability and performance. Developed RESTful API endpoints for
+          features like email notifications and resource tracking, and
+          implemented role-based access control for secure data management.
+          Contributed to advanced filtering, pagination, and search
+          functionalities to improve data access. Engaged in bug tracking, unit
+          testing, and code reviews, and supported continuous deployments with
+          detailed release documentation.
         </p>
       ),
-    },
-    {
-      title: "Zonal Head",
-      duration: "2019 - 2021",
-      description: (
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
-        </p>
-      ),
-    },
-    {
-      title: "Community Lead",
+    }, {
+      title: "Community Lead | Google Developer Students Club",
       duration: "2020 - 2022",
       description: (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          Led the Google Developer Student Clubs at Vidya Academy, managing a
+          community of 150+ students. Organized and conducted workshops to
+          enhance technical skills and promote a collaborative learning
+          environment.
         </p>
       ),
     },
+    {
+      title: "Zonal Head | GTech μLearn, Kerala, India",
+      duration: "2019 - 2021",
+      description: (
+        <p>
+          Managed and led a community of over 20,000 students across 100+
+          colleges in Kerala, coordinating and executing events and initiatives
+          across six districts to foster technical and professional growth among
+          members.
+        </p>
+      ),
+    },
+   
   ];
 
   const educationalQualifications = [
@@ -67,10 +73,26 @@ const About = () => {
       duration: "2018 - 2022",
       description: (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          Pursued a B.Tech in Computer Science and Engineering from Vidya
+          Academy of Science and Technology, affiliated with{" "}
+          <span className="highlight">
+            APJ Abdul Kalam Kerala Technological University (KTU)
+          </span>
+          . Actively participated in initiatives like Google Developer Student
+          Clubs, IEDC, Tinkerhub, and Mulearn. Coordinated the 2022 Techfest and
+          a Cybersecurity workshop, earning recognition with awards such as{" "}
+          <span className="highlight">Top Contributor Award 2022</span> (CSE
+          Department) and <span className="highlight">Star Performer</span>{" "}
+          (MPower Compass Training Program 2021). Served as department treasurer
+          and worked on notable projects, including a final year{" "}
+          <span className="highlight">
+            AI Assistant for the visually impaired
+          </span>{" "}
+          and a design project, Digital Classroom, built with the MERN stack.
+          Completed courses in{" "}
+          <span className="highlight">Robotics and IoT</span> and attended a{" "}
+          <span className="highlight">Data Science workshop</span> to further
+          enhance technical expertise.{" "}
         </p>
       ),
     },
@@ -79,10 +101,10 @@ const About = () => {
       duration: "2014 - 2016",
       description: (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat
+          Completed higher secondary education with a focus on Physics,
+          Chemistry, Mathematics, and Biology in the Tamil Nadu State Board.
+          Actively participated in extracurricular activities, including the
+          Junior Red Cross and National Service Scheme (NSS).
         </p>
       ),
     },
@@ -99,8 +121,8 @@ const About = () => {
               I specialize in creating robust, scalable, and user-friendly
               applications using a diverse set of technologies. My expertise
               spans across <span>NestJS, ReactJS, PostgreSQL, Django</span>, and
-              <span>{" "}more</span>, enabling me to deliver comprehensive solutions that meet
-              modern web development needs.
+              <span> more</span>, enabling me to deliver comprehensive solutions
+              that meet modern web development needs.
             </p>
           </div>
           <div>
@@ -166,7 +188,7 @@ const About = () => {
               </ul>
             </div>
             <h3>Technical Proficiencies</h3>
-            <div style={{ display: "flex",flexWrap:"wrap", gap: "15px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
               {skills.map((skill) => (
                 <div key={skill.name}>
                   <img src={skill.imageUrl} style={{ width: "50px" }} />

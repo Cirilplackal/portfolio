@@ -15,20 +15,19 @@ const Contact = () => {
         <div className={styles.contact_details}>
           <h4>Lets Talk about anything</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Feel free to reach out for collaboration, inquiries, or just to connect.<br/> You can contact me via,
           </p>
           <div className={styles.detail}>
             <h3>
-              <i className="ri-phone-line" />
+              <i className="ri-phone-line" />{" "}
               +91 94884 28991
             </h3>
             <h3>
-              <i className="ri-mail-line" />
+              <i className="ri-mail-line" />{" "}
               mail.cirilplackal@gmail.com
             </h3>
             <h3>
-              <i className="ri-map-pin-line" />
+              <i className="ri-map-pin-line" />{" "}
               Kakkanad,Kochi
             </h3>
           </div>
