@@ -45,8 +45,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--primary-color);
-  color: black;
+  background-color: #a8f7a8;;
+  /* color: black; */
 }
 
 .head_wrapper {
