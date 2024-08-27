@@ -5,6 +5,7 @@ import project3 from "@assets/bluekart.gif";
 import project4 from "@assets/space_api.gif";
 import project5 from "@assets/project5.webp";
 import project6 from "@assets/animations.gif";
+import { handleExternalLink } from "../../utils";
 const Projects = () => {
   const stacks = ["React Js", "JavaScript", "GSAP", "Tailwind CSS"];
   const myProjects = [    {
@@ -19,6 +20,7 @@ const Projects = () => {
     description: `Designed and developed a visually engaging portfolio page to showcase my projects, achievements, and skills. The site features both dark and night modes for enhanced user customization. Incorporated Framer Motion for smooth animations, Lenis for fluid scrolling.`,
     imgURL:
      project1,
+     link:"https://github.com/Cirilplackal/portfolio"
   },  {
     title: (
       <h4>
@@ -31,6 +33,7 @@ const Projects = () => {
     description: `Designed and developed a visually engaging portfolio page to showcase my projects, achievements, and skills. The site features both dark and night modes for enhanced user customization. Incorporated Framer Motion for smooth animations, Lenis for fluid scrolling.`,
     imgURL:
      project3,
+     link:"https://github.com/Cirilplackal/shopper"
   },
     {
       title: (
@@ -44,6 +47,7 @@ const Projects = () => {
       description: `This project is a React.js and TailwindCSS-based clone of Apple's iPhone 15 Pro website, showcasing the seamless integration of GSAP (Greensock Animations) and Three.js. The website effectively displays the iPhone 15 Pro models in various colors and shapes, delivering an engaging and interactive user experience.`,
       imgURL:
         "https://github.com/Cirilplackal/apple-clone/raw/main/preview/preview1.gif",
+        link:"https://github.com/Cirilplackal/apple-clone"
     },
     {
       title: (
@@ -56,6 +60,7 @@ const Projects = () => {
       ),
       description: `Created a visually engaging restaurant website using React, JavaScript, Tailwind CSS, and Vite. Integrated Framer Motion for smooth animations, Lenis for fluid scrolling, and GSAP for dynamic effects. Showcased Glassmorphism for an elegant frosted glass design.`,
       imgURL: project2,
+      link:"https://github.com/Cirilplackal/foodcraft"
     },
 
     {
@@ -69,6 +74,7 @@ const Projects = () => {
       description: `Demonstrating advanced animation techniques and 3D visualization skills, with positive feedback on design and interactivity.
 `,
       imgURL: project6,
+      link:"https://github.com/Cirilplackal/animations"
     },
     {
       title: (
@@ -80,6 +86,7 @@ const Projects = () => {
       ),
       description: `Currently developing a RESTful API using NestJS, PostgreSQL, and Swagger to manage and retrieve historical data about space flights. The ongoing project aims to create a comprehensive and accessible repository of space exploration records. `,
       imgURL: project4,
+      link:"https://github.com/Cirilplackal?tab=repositories"
     }
   ];
   return (
@@ -102,7 +109,7 @@ const Projects = () => {
             </div>
             <div className={styles.project_content}>
               {project.title}
-              <i className="ri-arrow-right-line" />
+              <i className="ri-arrow-right-line" onClick={()=>handleExternalLink(project.link)}/>
             </div>
             <div className={styles.project_description}>
               {project.description}

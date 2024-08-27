@@ -1,6 +1,7 @@
 import styles from "./About.module.css";
 import aboutImage from "@assets/about-bg.jpg";
 import useLenis from "@hooks/useLenis";
+import profile from "@assets/profile_pic.png"
 import { skills } from "../../constants";
 const About = () => {
   const experienceCounters = [
@@ -162,7 +163,7 @@ const About = () => {
           <div className={styles.about_image}>
             <img
               src={
-                "https://media.istockphoto.com/id/1049422504/photo/with-crossed-arms-confident-and-serious.jpg?s=1024x1024&w=is&k=20&c=HN-vqfhTfHfjLmxLfH515ncqK_DIlscfT2uPsojXFVs="
+               profile
               }
               alt="img-about"
             />

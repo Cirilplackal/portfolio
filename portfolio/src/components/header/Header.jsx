@@ -1,12 +1,12 @@
+import { handleExternalLink } from "../../utils";
+import { SiLeetcode } from "react-icons/si";
 import styles from "./Header.module.css";
 import { ReactTyped } from "react-typed";
 const Header = () => {
   return (
     <div className={styles.header_wrapper} id="home">
       <small>Helloo there...!!!, Welcome to my page</small>
-      <h2>
-        Hey, I am Ciril Plackal
-      </h2>
+      <h2>Hey, I am Ciril Plackal</h2>
       <div className={styles.react_typed}>
         I Am a{" "}
         <span>
@@ -39,12 +39,35 @@ const Header = () => {
         </li>
       </ul>
       <div className={styles.social}>
-        <i className="ri-facebook-line" />
-        <i className="ri-instagram-line" />
-        <i className="ri-twitter-x-line" />
-        <i className="ri-github-line" />
+        <i
+          className="ri-linkedin-line"
+          onClick={() =>
+            handleExternalLink("https://www.linkedin.com/in/cirilplackal/")
+          }
+        />
+        <i
+          className="ri-github-line"
+          onClick={() => handleExternalLink("https://github.com/Cirilplackal/")}
+        />
+        <i
+          onClick={() =>
+            handleExternalLink("https://leetcode.com/u/Cirilplackal/")
+          }
+        >
+          <SiLeetcode />
+        </i>
+        <i
+          className="ri-instagram-line"
+          onClick={() =>
+            handleExternalLink("https://instagram.com/cirilplackal")
+          }
+        />
+        <i
+          className="ri-twitter-x-line"
+          onClick={() => handleExternalLink("https://twitter.com/cplackal")}
+        />
       </div>
-      <button>
+      <button onClick={()=>handleExternalLink("https://drive.google.com/drive/folders/1lm96rz2duy7vO5L_y9BxwvHB55Xd9Qq0")}>
         Download CV <i className="ri-download-line" />
       </button>
     </div>

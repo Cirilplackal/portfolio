@@ -20,7 +20,7 @@ body {
 :root {
   --bg-color: #faf9f6;
   --text-color: #464646;
-  --primary-color: #18cf08;
+  --primary-color: #4eb04e;
   --logo-color: #ffffff;
   --card-bg: white;
   --box-shadow: rgba(0, 0, 0, 0.1);
@@ -34,10 +34,10 @@ body {
 [Theme="Dark"] {
   --bg-color: #000000;
   --text-color: rgb(170, 170, 170);
-  --primary-color: #18cf08;
+  --primary-color: #2fce2f;
   --logo-color: #000000;
   --card-bg: #1e1e1e;
-  --box-shadow: #18cf08;
+  --box-shadow: #4eb04e;
   --card-border: rgba(255, 255, 255, 0.1);
   --section-title: white;
   --section-border: white;
@@ -90,8 +90,9 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff;
+  background-color: var(--primary-color);
   cursor: pointer;
+  color: var(--bg-color);
 }
 
 .section {
