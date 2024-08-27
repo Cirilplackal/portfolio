@@ -20,13 +20,13 @@ const Contact = () => {
     try {
       // Replace with your EmailJS service ID, template ID, and user ID
       await emailjs.send(
-        "service_4sx1auf",
-        "template_jlyzue5",
+        import.meta.env.MAIL_SERVICE_ID,
+        import.meta.env.MAIL_TEMPLATE_ID,
         formData,
-        "46LtUheCNCCRq2X5B"
+        import.meta.env.MAIL_API_KEY
       );
       setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "",subject:"" });
+      setFormData({ name: "", email: "", message: "", subject: "" });
     } catch (error) {
       setStatus("Failed to send message.");
       console.log(error);
