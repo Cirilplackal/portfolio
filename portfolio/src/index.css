@@ -29,12 +29,13 @@ body {
   --section-border: #1e1e1e;
   --lite-bg: #f4fff4;
   --bg-image: url(https://ciracollege.com/wp-content/uploads/2020/11/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg);
+  
 }
 
 [Theme="Dark"] {
   --bg-color: #000000;
   --text-color: rgb(170, 170, 170);
-  --primary-color: #2fce2f;
+  --primary-color: #31a331;
   --logo-color: #000000;
   --card-bg: #1e1e1e;
   --box-shadow: #4eb04e;
@@ -66,7 +67,7 @@ h3 {
   font-weight: 400 !important;
 }
 h2 {
-  color: #18cf08;
+  color:#31a331;
 }
 p {
   font-weight: 400 !important;
@@ -169,18 +170,19 @@ button:hover {
   color: var(--primary-color);
 }
 .status_inprogress {
-  color: #5d42f5;
+  color: #dbcd09;
 }
 
 .highlight{
   /* color: rgb(0, 163, 22); */
   font-weight: 500;
-
-   
-
-  
 }
+.tech_icons{
+padding: 8px;
+/* border: 1px solid rgb(199, 199, 199); */
+border-radius: 12px;
 
+}
 @media screen and (max-width: 600px) {
   body {
     text-align: justify;

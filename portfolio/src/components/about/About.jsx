@@ -1,8 +1,9 @@
 import styles from "./About.module.css";
 import aboutImage from "@assets/about-bg.jpg";
 import useLenis from "@hooks/useLenis";
-import profile from "@assets/profile_pic.png"
+import profile from "@assets/profile_pic.png";
 import { skills } from "../../constants";
+import { Tooltip } from "react-tooltip";
 const About = () => {
   const experienceCounters = [
     {
@@ -41,7 +42,8 @@ const About = () => {
           detailed release documentation.
         </p>
       ),
-    }, {
+    },
+    {
       title: "Community Lead | Google Developer Students Club",
       duration: "2020 - 2022",
       description: (
@@ -65,7 +67,6 @@ const About = () => {
         </p>
       ),
     },
-   
   ];
 
   const educationalQualifications = [
@@ -161,47 +162,99 @@ const About = () => {
         </div>
         <div className={styles.about}>
           <div className={styles.about_image}>
-            <img
-              src={
-               profile
-              }
-              alt="img-about"
-            />
+            <img src={profile} alt="img-about" />
           </div>
           <div className={styles.about_content}>
-            <div>
-              <h2>Technical Proficiencies</h2>
-              <ul>
-                <li>
-                  <strong>Frontend:</strong> ReactJS, Ant Design, Tailwind CSS,
-                  DaisyUI, JavaScript, TypeScript
-                </li>
-                <li>
-                  <strong>Backend:</strong> NestJS, Django, REST APIs
-                </li>
-                <li>
-                  <strong>Database:</strong> SQL, PostgreSQL
-                </li>
-                <li>
-                  <strong>Tools & Technologies:</strong> Vite, Docker, Git,
-                  VSCode
-                </li>
-              </ul>
-            </div>
-            <h3>Technical Proficiencies</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
-              {skills.map((skill) => (
-                <div key={skill.name}>
-                  <img src={skill.imageUrl} style={{ width: "50px" }} />
+            <h2>Technical Proficiencies</h2>
+            <ul>
+              <li>
+                <strong>Frontend:</strong> ReactJS, Ant Design, Tailwind CSS,
+                DaisyUI, JavaScript, TypeScript
+              </li>
+              <div
+                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+              ></div>
+              <li>
+                <strong>Backend:</strong> NestJS, Django, REST APIs
+              </li>
+              <div
+                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+              ></div>
+              <li>
+                <strong>Database:</strong> SQL, PostgreSQL
+              </li>
+              <div
+                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+              ></div>
+              <li>
+                <strong>Tools & Technologies:</strong> Vite, Docker, Git, VSCode
+              </li>
+            </ul>
+            {/* <div>
+              <div>
+                <span>Front End</span>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="tech_icons">
+                      <img src={skill.imageUrl} style={{ width: "25px" }} />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+              <div>
+                <span>Front End</span>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="tech_icons">
+                      <img src={skill.imageUrl} style={{ width: "25px" }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <span>Front End</span>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="tech_icons">
+                      <img src={skill.imageUrl} style={{ width: "25px" }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <span>Front End</span>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="tech_icons">
+                      <img src={skill.imageUrl} style={{ width: "25px" }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div> */}
+            {/* <div className={styles.github_status}>
+              {" "}
+              <div>
+                <img
+                  align="left"
+                  src="https://github-readme-streak-stats.herokuapp.com/?user=cirilplackal"
+                  alt="your-username"
+                />
+              </div>
+              <div>
+                <img
+                  align="left"
+                  src="https://github-readme-stats.vercel.app/api/top-langs?username=cirilplackal&hide=html,css&layout=compact"
+                  alt="your-username"
+                />
+              </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.experience_counters}>
           {experienceCounters.map((experience) => (
             <div className={styles.experience_counter} key={experience.label}>
-              <h2>
+              <h2 className>
                 <span>{experience.count}+</span>
                 {experience.label}
               </h2>

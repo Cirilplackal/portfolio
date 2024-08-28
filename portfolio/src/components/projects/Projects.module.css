@@ -61,6 +61,11 @@
   font-size: 18px;
   margin-top: 8px;
   border-radius: 50%;
+  cursor: pointer;
+}
+.projects_cards .project_card .project_content i:hover {
+background-color: var(--primary-color);
+color: white;
 }
 .project_description{
   padding: 16px;
