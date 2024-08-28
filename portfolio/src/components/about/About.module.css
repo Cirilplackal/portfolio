@@ -27,7 +27,7 @@
 .about .about_image:hover {
   box-shadow: 8px 8px 8px var(--box-shadow);
 }
-.tech_container{
+.tech_container {
   display: flex;
 }
 .about .about_content {
@@ -58,25 +58,25 @@
 }
 
 .about_section {
-display: flex;
-gap: 10px;
- flex-direction: column;
- color: var(--text-color);  
- padding-top: 16px;
- padding-left: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: var(--text-color);
+  padding-top: 16px;
+  padding-left: 20px;
 }
-.about_section p{
+.about_section p {
   margin: 0 !important;
   padding: 0 !important;
 }
-.about_section span{
+.about_section span {
   color: var(--primary-color);
 }
-.about_section ul{
+.about_section ul {
   padding-left: 20px;
   color: var(--primary-color);
 }
-.about_section ul strong{
+.about_section ul strong {
   color: gray;
 }
 .details {
@@ -170,7 +170,10 @@ gap: 10px;
   padding: 14px 0;
   border-bottom: 0.2px solid var(--card-border);
 }
-
+.stack_list li{
+  padding: 0px !important;
+  list-style: none;
+}
 .experience:last-of-type,
 .qualification:last-of-type {
   border: none;
@@ -204,7 +207,7 @@ gap: 10px;
     width: 100%;
   }
 }
-.github_status{
+.github_status {
   display: flex;
   flex-wrap: wrap;
   padding: 0 !important;
@@ -236,20 +239,31 @@ gap: 10px;
 @media screen and (max-width: 786px) {
   .experience_counters {
     grid-template-columns: repeat(1, 1fr);
-
   }
-  .tech_container{
+  .about_content h2{
+    font-size: large !important;
+  }
+  .about_content ul li{
+    font-size: medium !important;
+    padding-left: 0 !important;
+  }
+  .tech_container {
     flex-direction: column;
     gap: 10px;
+    /* border: 1px solid black; */
   }
   .experience_counter {
     margin: 10px;
-  padding: auto}
-  .experience_counter h2 span {font-size:25px;
+    padding: auto;
+  }
+  .experience_counter h2 span {
+    font-size: 25px;
   }
   .details {
     flex-direction: column;
     gap: 10px;
-    
+  }
+  .stack_overview {
+    display: none;
   }
 }

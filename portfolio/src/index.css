@@ -18,21 +18,6 @@ body {
 }
 
 :root {
-  --bg-color: #faf9f6;
-  --text-color: #464646;
-  --primary-color: #4eb04e;
-  --logo-color: #ffffff;
-  --card-bg: white;
-  --box-shadow: rgba(0, 0, 0, 0.1);
-  --card-border: rgba(0, 0, 0, 0.1);
-  --section-title: black;
-  --section-border: #1e1e1e;
-  --lite-bg: #f4fff4;
-  --bg-image: url(https://ciracollege.com/wp-content/uploads/2020/11/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg);
-  
-}
-
-[Theme="Dark"] {
   --bg-color: #000000;
   --text-color: rgb(170, 170, 170);
   --primary-color: #31a331;
@@ -43,7 +28,21 @@ body {
   --section-title: white;
   --section-border: white;
   --lite-bg: #1e1e1e;
-  --bg-image: url(https://dz2cdn1.dzone.com/storage/temp/15324590-software-developer-g37ddca46a-1280.jpg);
+  --bg-image: url(/bg-dark.jpg);
+}
+
+[Theme="Light"] {
+  --bg-color: #faf9f6;
+  --text-color: #464646;
+  --primary-color: #4eb04e;
+  --logo-color: #ffffff;
+  --card-bg: white;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --section-title: black;
+  --section-border: #1e1e1e;
+  --lite-bg: #f4fff4;
+  --bg-image: url(/bg-lite.jpg);
 }
 
 ::selection {
@@ -194,10 +193,15 @@ border-radius: 12px;
   .section_title p {
     padding-left: 40px;
   }
-
+  .section_title p {
+    font-size: small;
+  }
   .section_title::after,
   .section_title::before {
     /* pa */
     left: 0;
+  }
+  h3{
+    font-size:medium;
   }
 }

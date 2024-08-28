@@ -107,4 +107,10 @@
   .header_wrapper ul {
     width: 100%;
   }
+  .react_typed span {
+    font-size: medium !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

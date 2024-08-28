@@ -80,7 +80,7 @@ const Projects = () => {
       title: (
         <h4>
           Space Data API  <div>
-            Status: <span className="status_inprogress">In Progress</span>
+            Status: <span className="status_inprogress">On hold</span>
           </div>
           </h4>
       ),

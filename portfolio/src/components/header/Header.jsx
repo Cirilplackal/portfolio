@@ -5,7 +5,6 @@ import { ReactTyped } from "react-typed";
 const Header = () => {
   return (
     <div className={styles.header_wrapper} id="home">
-      <small>Helloo there...!!!, Welcome to my page</small>
       <h2>Hey, I am Ciril Plackal</h2>
       <div className={styles.react_typed}>
         I Am a{" "}
@@ -67,7 +66,13 @@ const Header = () => {
           onClick={() => handleExternalLink("https://twitter.com/cplackal")}
         />
       </div>
-      <button onClick={()=>handleExternalLink("https://drive.google.com/drive/folders/1lm96rz2duy7vO5L_y9BxwvHB55Xd9Qq0")}>
+      <button
+        onClick={() =>
+          handleExternalLink(
+            "https://drive.google.com/drive/folders/1lm96rz2duy7vO5L_y9BxwvHB55Xd9Qq0"
+          )
+        }
+      >
         Download CV <i className="ri-download-line" />
       </button>
     </div>
