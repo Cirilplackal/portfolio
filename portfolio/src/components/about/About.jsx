@@ -3,7 +3,6 @@ import aboutImage from "@assets/about-bg.jpg";
 import useLenis from "@hooks/useLenis";
 import profile from "@assets/profile_pic.png";
 import { skills } from "../../constants";
-import { Tooltip } from "react-tooltip";
 const About = () => {
   const experienceCounters = [
     {
@@ -166,30 +165,30 @@ const About = () => {
           </div>
           <div className={styles.about_content}>
             <h2>Technical Proficiencies</h2>
-            <ul>
-              <li>
-                <strong>Frontend:</strong> ReactJS, Ant Design, Tailwind CSS,
-                DaisyUI, JavaScript, TypeScript
-              </li>
-              <div
-                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
-              ></div>
-              <li>
-                <strong>Backend:</strong> NestJS, Django, REST APIs
-              </li>
-              <div
-                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
-              ></div>
-              <li>
-                <strong>Database:</strong> SQL, PostgreSQL
-              </li>
-              <div
-                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
-              ></div>
-              <li>
-                <strong>Tools & Technologies:</strong> Vite, Docker, Git, VSCode
-              </li>
-            </ul>
+<div className={styles.tech_container}>            <ul>
+<li>
+  <strong>Frontend:</strong> ReactJS, Ant Design, Tailwind CSS,
+  DaisyUI, JavaScript, TypeScript
+</li>
+<div
+  style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+></div>
+<li>
+  <strong>Backend:</strong> NestJS, Django, REST APIs
+</li>
+<div
+  style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+></div>
+<li>
+  <strong>Database:</strong> SQL, PostgreSQL
+</li>
+<div
+  style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+></div>
+<li>
+  <strong>Tools & Technologies:</strong> Vite, Docker, Git, VSCode
+</li>
+</ul><p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=cirilplackal&show_icons=true&locale=en&layout=pie" alt="cirilplackal" /></p></div>
             {/* <div>
               <div>
                 <span>Front End</span>
@@ -249,7 +248,8 @@ const About = () => {
                 />
               </div>
             </div> */}
-          </div>
+          </div>         
+
         </div>
         <div className={styles.experience_counters}>
           {experienceCounters.map((experience) => (

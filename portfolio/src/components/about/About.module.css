@@ -27,6 +27,9 @@
 .about .about_image:hover {
   box-shadow: 8px 8px 8px var(--box-shadow);
 }
+.tech_container{
+  display: flex;
+}
 .about .about_content {
   width: 65%;
   padding: 30px;
@@ -37,6 +40,7 @@
   gap: 15px;
   background-color: var(--card-bg);
   transition: 0.6s;
+  font-size: larger;
 }
 .about .about_content div {
   padding-left: 20px;
@@ -44,8 +48,10 @@
 .about .about_content:hover {
   box-shadow: 5px 5px 5px var(--box-shadow);
 }
-.about .about_content h3 {
+.about .about_content h2 {
   font-size: 25px;
+  margin-left: 0 !important;
+  padding: 0px !important;
 }
 .about .about_content p {
   padding: 0;
@@ -230,6 +236,16 @@ gap: 10px;
 @media screen and (max-width: 786px) {
   .experience_counters {
     grid-template-columns: repeat(1, 1fr);
+
+  }
+  .tech_container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .experience_counter {
+    margin: 10px;
+  padding: auto}
+  .experience_counter h2 span {font-size:25px;
   }
   .details {
     flex-direction: column;
