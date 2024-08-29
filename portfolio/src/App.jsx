@@ -7,6 +7,7 @@ import Projects from "@components/projects/Projects";
 import Testimonials from "@components/testimonials/Testimonials";
 import Contact from "@components/contact/Contact";
 function App() {
+  // useLenis();
   return (
     <>
       <div className="head_wrapper">
@@ -16,8 +17,8 @@ function App() {
       <About />
       <Services />
       <Projects />
-      <Testimonials />
       <Contact />
+
     </>
   );
 }

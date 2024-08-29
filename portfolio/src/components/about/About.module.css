@@ -14,6 +14,7 @@
   width: 35%;
   border-radius: 12px;
   transition: 0.6s;
+  background-color: var(--card-bg);
 }
 .about .about_image img {
   width: 100%;
@@ -26,6 +27,9 @@
 .about .about_image:hover {
   box-shadow: 8px 8px 8px var(--box-shadow);
 }
+.tech_container {
+  display: flex;
+}
 .about .about_content {
   width: 65%;
   padding: 30px;
@@ -36,17 +40,45 @@
   gap: 15px;
   background-color: var(--card-bg);
   transition: 0.6s;
+  font-size: larger;
+}
+.about .about_content div {
+  padding-left: 20px;
 }
 .about .about_content:hover {
   box-shadow: 5px 5px 5px var(--box-shadow);
 }
-.about .about_content h3 {
+.about .about_content h2 {
   font-size: 25px;
+  margin-left: 0 !important;
+  padding: 0px !important;
 }
 .about .about_content p {
   padding: 0;
 }
 
+.about_section {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: var(--text-color);
+  padding-top: 16px;
+  padding-left: 20px;
+}
+.about_section p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.about_section span {
+  color: var(--primary-color);
+}
+.about_section ul {
+  padding-left: 20px;
+  color: var(--primary-color);
+}
+.about_section ul strong {
+  color: gray;
+}
 .details {
   display: flex;
   width: 100%;
@@ -89,7 +121,9 @@
 .experience_counter h2 {
   text-align: center;
   font-weight: 600;
+  font-size: large;
   padding-left: 0 !important;
+  color: var(--text-color);
 }
 .experience_counter h2 span {
   color: var(--primary-color);
@@ -105,6 +139,11 @@
   gap: 40px;
   margin-top: 50px;
 }
+.qualifications h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .experience_wrapper,
 .educations_wrapper {
   width: 50%;
@@ -131,7 +170,10 @@
   padding: 14px 0;
   border-bottom: 0.2px solid var(--card-border);
 }
-
+.stack_list li{
+  padding: 0px !important;
+  list-style: none;
+}
 .experience:last-of-type,
 .qualification:last-of-type {
   border: none;
@@ -165,7 +207,11 @@
     width: 100%;
   }
 }
-
+.github_status {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 !important;
+}
 @media screen and (max-width: 900px) {
   .about {
     flex-direction: column;
@@ -194,9 +240,30 @@
   .experience_counters {
     grid-template-columns: repeat(1, 1fr);
   }
+  .about_content h2{
+    font-size: large !important;
+  }
+  .about_content ul li{
+    font-size: medium !important;
+    padding-left: 0 !important;
+  }
+  .tech_container {
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid black; */
+  }
+  .experience_counter {
+    margin: 10px;
+    padding: auto;
+  }
+  .experience_counter h2 span {
+    font-size: 25px;
+  }
   .details {
     flex-direction: column;
     gap: 10px;
-    
+  }
+  .stack_overview {
+    display: none;
   }
 }
